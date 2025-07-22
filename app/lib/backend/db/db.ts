@@ -9,7 +9,7 @@ if (!global._mysqlPool) {
     password: process.env.DB_PASSWORD,
     user: process.env.DB_USER,
     waitForConnections: true,
-    connectionLimit: 10,
+    connectionLimit: 5,
     queueLimit: 0,
   });
 }
