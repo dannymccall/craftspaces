@@ -1,6 +1,6 @@
 import mysql from "mysql2/promise";
 
-let pool;
+let pool:any;
 
 if (!global._mysqlPool) {
   global._mysqlPool = mysql.createPool({
