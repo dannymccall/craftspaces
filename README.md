@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Platform
 
-## Getting Started
+A full-stack ecommerce web application built with **Next.js**, **React**, **TypeScript**, **MySQL**, and **TailwindCSS**.  
+The backend uses **Next.js API Routes** — no standalone Express server.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Functionalities
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### User Features
+- **Authentication & Profiles**
+  - Sign up, login, and manage profiles
+  - Secure JWT-based authentication
+- **Product Browsing**
+  - View products by category
+  - Search and filtering
+  - Detailed product pages with images and descriptions
+- **Shopping Cart & Checkout**
+  - Add, update, and remove items
+  - Order summary and checkout
+- **Order Management**
+  - Place and view order history
+  - Track order status
+- **Notifications**
+  - Email confirmations and updates
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Admin Features
+- **Product Management**
+  - Add, edit, and delete products
+  - Manage categories, stock levels, and prices
+- **Order Management**
+  - View and manage customer orders
+  - Update order statuses
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Other Features
+- **Responsive Design**
+  - Mobile-first UI with TailwindCSS
+- **Serverless API**
+  - Powered by Next.js API routes
+  - Connection pooling for MySQL to support serverless environments (Vercel)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:** Next.js, React, TypeScript, TailwindCSS
+- **Backend:** Next.js API Routes
+- **Database:** MySQL (Clever Cloud)
+- **Authentication:** JWT-based authentication
+- **Deployment:** Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Configure environment variables
+## Create a .env file:
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+SMTP_PASS=
+SMTP_FROM=
+SMTP_USER=
+SMTP_PORT=
+SMTP_HOST=
+SESSION_SECRET=
+NODE_ENV=
+BASE_URL=
+NEXT_PUBLIC_JWT_SECRET=
+NEXT_PUBLIC_RESET_PASSWORD_SECRET=
+NEXT_PUBLIC_REFRESH_SECRET=
+NEXT_PUBLIC_ACCESS_TOKEN_SECRET=
+NEXT_PUBLIC_CLOUDINARY_API_KEY=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+NEXT_PUBLIC_CLOUDINARY_API_SECRET=
+NEXT_PUBLIC_BASE_URL=
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
+NEXT_PUBLIC_SOCKET_URL=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Note
+## Email Service
+Gmail
+Emailjs
+
+---
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dannymccall/craftspaces
+   cd ecommerce
+   npm install 
+
+### Start Development environment
+   npm run dev
+   
+### Start Production
+npm run build 
+npm start
